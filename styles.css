@@ -1,0 +1,179 @@
+
+/* Applies 0 margin and padding and sets border-box styling to all elements, including pseudo elements */
+@font-face {
+    font-family: "Roboto";
+    src: url("Roboto/Roboto-Regular.ttf") format(".ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("Roboto/Roboto-Black.ttf") format(".ttf");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("Roboto/Roboto-LightItalic.ttf") format(".ttf");
+    font-weight: 100;
+    font-style: italic;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bg-navy {
+    background-color: #1F2937;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-grey {
+    background-color: #e5e7eb;
+}
+
+.bg-light-blue {
+    background-color: #3882f6;
+}
+
+.margin-top {
+    margin-top: 100px;
+}
+
+.container {
+    width: 1080px;
+    margin: auto;
+    padding: 5rem 1rem;
+}
+
+#header-container {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-container h1 {
+    color:#f9faf8;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+#header-links-container {
+    display:flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+#hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.hero-container-left{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#hero-main-text {
+    font-family: "Roboto" sans-serif;
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.hero-secondary-text {
+    color: #E5E7eb;
+    font-size: 18px;
+}
+
+img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+button {
+    background-color: #3882f6;
+    width: 8rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: .5rem;
+}
+
+.blank-image {
+    width: 80%;
+    aspect-ratio: 1/1;
+    border-radius: 1rem;
+    border: .2rem solid;
+    border-color: #3882f6;
+    background-color: white;
+    margin-bottom:0.5rem;
+}
+
+.information-header-text{
+    display:flex;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+    margin-bottom: 2rem;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+blockquote {
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 100;
+    font-style: italic;
+}
+
+blockquote cite {
+    display: block;
+    text-align:right;
+    margin-top: 1rem;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.cta-container {
+    background-color: #3882f6;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0.5rem;
+    color: white;
+}
+
+.cta-container button {
+    color: white;
+    border: solid white;
+    width: 8rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: .5rem;
+}
